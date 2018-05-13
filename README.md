@@ -239,10 +239,10 @@ git commit -am "add my first feature"
 git flow feature finish first_feature
 
 # release
-git flow release start 0.1.0
-git flow release publish 0.1.0                    # release veröffentlichen
-git flow release track 0.1.0                      # remote release verfolgen
-git flow release finish '0.1.0'
+git flow release start 0.2.0
+git flow release publish 0.2.0                    # release veröffentlichen
+git flow release track 0.2.0                      # remote release verfolgen
+git flow release finish 0.2.0
 git push --tags
 
 # horfix
