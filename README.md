@@ -14,13 +14,13 @@
 
 [Git für Linux](http://book.git-scm.com/2_installing_git.html)
 
-### Sources
+### git workflow
 
 ![Git](cheat-sheet-graphic-v1.jpg)
 
 ## git befehle
 
-```sh
+```bash
 # git konfigurieren
 git config --global user.email "email@mii.com"
 git config --global user.name "My Name"
@@ -68,11 +68,12 @@ git fetch origin
 git reset --hard origin/master
 
 # nützliche tricks
+git log --graph --oneline --all               # Git tree in terminal
 gitk                                          # Eingebaute git-GUI
 git config color.ui true                      # Farbige Konsolenausgabe:
 git config format.pretty oneline              # Einezeilige Commit Logausgabe
 git add -i                                    # Interaktives Hinzufügen von Änderungen
-
+git merge v1.0 --no-commit --no-ff            # merge ohne auto commit
 ```
 
 ## gitflow
@@ -223,3 +224,32 @@ _N/A_ | `git push origin master`
 ### Sources
 
 ![Git branching model](git-model@2x.png "Git branching model")
+
+## Git-flow Example
+
+```bash
+git flow init
+
+# feature
+git flow feature start first_feature
+git flow feature publish first_feature            # feature veröffentlichen
+git flow feature pull origin first_feature        # feature holen
+git add .
+git commit -am "add my first feature"
+git flow feature finish first_feature
+
+# release
+git flow release start 0.1.0
+git flow release publish 0.1.0                    # release veröffentlichen
+git flow release track 0.1.0                      # remote release verfolgen
+git flow release finish '0.1.0'
+git push --tags
+
+# horfix
+git flow hotfix start hotfix_branch
+git flow hotfix finish 'hotfix_branch'
+```
+
+### Befehle
+
+![Git Befehle](git-flow-commands.png "Git Befehle")
