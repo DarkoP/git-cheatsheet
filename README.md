@@ -38,17 +38,18 @@ git add .
 git commit -am "Commit-Nachricht"
 
 # änderungen hochladen
-git remote -v                                 # entfernte repo prüfen
-git remote add origin <server>                # mit entfernter repo verbinden, wenn nicht geklont
+git remote -v                                 # remote branch prüfen
+git remote add origin <server>                # mit remote branch verbinden, wenn nicht geklont
 git push origin master                        # entfernte repo updaten
 
 # branching
 git checkout -b feature_x                     # branch anlegen und wechseln
 git checkout -b feature_x feature_y           # branch basiert auf
 git checkout master                           # zu master wechseln
+git push -u origin feature_x                  # branch remote anlegen
+git push origin feature_x                     # remote branch updaten
 git branch -d feature_x                       # branch löschen
-git push origin <branch>                      # entfernte repo updaten
-git push -u origin <branch>                   # branch remote anlegen
+git push origin :feature_x                    # remote branch löschen
 
 # update & merge
 git pull                                      # fatch and merge
@@ -68,6 +69,8 @@ git fetch origin
 git reset --hard origin/master
 
 # nützliche tricks
+
+git rm --cached /path/to/file                 # entferne Datei aus dem git ohne es zu löschen, in .gitignore eintragen
 git log --graph --oneline --all               # Git tree in terminal
 gitk                                          # Eingebaute git-GUI
 git config color.ui true                      # Farbige Konsolenausgabe:
@@ -248,6 +251,7 @@ git flow feature pull origin first_feature        # feature holen
 git add .
 git commit -am "add my first feature"
 git flow feature finish first_feature
+git push origin develop
 
 # release
 git flow release start 0.2.0
