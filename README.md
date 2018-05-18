@@ -257,12 +257,15 @@ git push origin develop
 git flow release start 0.2.0
 git flow release publish 0.2.0                    # release veröffentlichen
 git flow release track 0.2.0                      # remote release verfolgen
-git flow release finish 0.2.0
-git push --tags
+git flow release finish 0.2.0                     # merge nach master und develop
+git push origin develop                           # develop remote update
+git checout master                                # nach master vechselen
+git push origin master                            # master remote update
+git push --tags                                   # tag veröffentlichen
 
 # horfix
 git flow hotfix start hotfix_branch
-git flow hotfix finish 'hotfix_branch'
+git flow hotfix finish hotfix_branch
 ```
 
 ### Befehle
