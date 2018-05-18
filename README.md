@@ -76,13 +76,11 @@ git add -i                                    # Interaktives Hinzufügen von Än
 git merge v1.0 --no-commit --no-ff            # merge ohne auto commit
 ```
 
-## gitflow#
-
-## .gitignore
+### .gitignore
 
 Link zu dem [.gitignore](https://github.com/github/gitignore) Dateien für unterschiedliche Projekte.
 
-
+## gitflow
 
 ### Links
 
