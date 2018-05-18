@@ -268,11 +268,11 @@ git flow hotfix start hotfix_branch
 git flow hotfix finish hotfix_branch
 
 # Tag nachtreglich umbenennen local und remote
-git tag neu alt                                   # tag umbenennen
+git tag neu alt                                   # tag umbenennen Bsp. "git tag 0.1.1 hotfix_branch"
 git tag -d alt                                    # alten tag löschen
 git push origin :refs/tags/old                    # alten tag remote löschen
 git push --tags                                   # neuen tag publizieren
-# informiere deine Kollegen darüber und bitte Sie die Tags bei sich zu aktuallisieren mit folgenden kommando
+# informiere deine Kollegen darüber und bitte Sie die Tags, mit folgenden kommando, bei sich zu aktuallisieren
 git pull --prune --tags                           # aktuelle tags holen
 ```
 
