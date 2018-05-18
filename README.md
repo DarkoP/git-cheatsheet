@@ -76,7 +76,13 @@ git add -i                                    # Interaktives Hinzufügen von Än
 git merge v1.0 --no-commit --no-ff            # merge ohne auto commit
 ```
 
-## gitflow
+## gitflow#
+
+## .gitignore
+
+Link zu dem [.gitignore](https://github.com/github/gitignore) Dateien für unterschiedliche Projekte.
+
+
 
 ### Links
 
@@ -86,11 +92,14 @@ git merge v1.0 --no-commit --no-ff            # merge ohne auto commit
 
 [Gitflow Workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)
 
+[Git Flow Workflow 2](https://leanpub.com/git-flow/read)
+
 [Git-Workflows - Der Gitflow-Workflow](https://infos.seibert-media.net/display/Productivity/Git-Workflows+-+Der+Gitflow-Workflow)
 
 [Using git-flow to automate your git branching workflow](https://jeffkreeftmeijer.com/git-flow/)
 
 [Guide to using GitFlow](https://blogs.endjin.com/2013/04/a-step-by-step-guide-to-using-gitflow-with-teamcity-part-3-gitflow-commands/)
+
 
 ### git-flow installieren
 
