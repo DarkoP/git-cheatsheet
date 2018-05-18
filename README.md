@@ -80,6 +80,10 @@ git merge v1.0 --no-commit --no-ff            # merge ohne auto commit
 
 Link zu dem [.gitignore](https://github.com/github/gitignore) Dateien für unterschiedliche Projekte.
 
+### .gitconfig
+
+Ein Bsp. für [gitconfig](https://gist.github.com/pksunkara/988716) Datei
+
 ## gitflow
 
 ### Links
